@@ -1,0 +1,132 @@
+\documentclass[12pt]{article}
+\usepackage[top=1in, bottom=1in, right=1in, left=1in]{geometry}
+\usepackage{amsmath}
+%\usepackage[style=chicago-authordate, backend=biber, natbib=true]{biblatex}
+%\addbibresource{../Supplemental/masterMethods.bib}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{mathtools}
+\usepackage{enumerate}
+\usepackage{tikz}
+\usepackage{bm}
+\usetikzlibrary{calc}
+\usetikzlibrary{trees}
+\usepackage[bottom]{footmisc}
+\interfootnotelinepenalty=10000
+
+    
+\usepackage{setspace}
+%\usepackage{../Supplemental/pa}
+
+
+\usepackage{authblk}
+\title{Gaussian Processes for the Social Sciences\\
+{\Large Ko\c{c} University}}
+\author{Summer 2021}
+\date{Syllabus}
+\linespread{1.3}
+\begin{document}
+\maketitle
+
+\hline
+\vspace{2em}
+\begin{minipage}[t]{.3\linewidth}
+\textbf{Instructor}\\
+David Carlson\\
+\href{mailto:dcarlson@ku.edu.tr}{dcarlson@ku.edu.tr}\\
+Office: CASE 140
+\end{minipage}
+\begin{minipage}[t]{.7\linewidth}
+\textbf{Class Schedule}\\
+TBA\\
+\textbf{Office Hours}\\
+TBA\\
+\textbf{Online Access}\\
+\href{https://ku.blackboard.com}{https://ku.blackboard.com} (for grades and readings)\\
+\href{https://github.com/carlson9/GPindep}{https://github.com/carlson9/GPindep} (for in-class material)
+\end{minipage}
+\vspace{2em}
+\hline
+
+\section*{Introduction}
+
+\noindent This course is designed to primarily familiarize the student with the use of Gaussian processes (GPs) for social science research. GPs are adept as both a machine learning tool and a statistical inference tool, and both will be covered in the course. Topics include but are not limited to measurement problems, classification, time-series analyses, cross-sectional analyses, prediction, estimating counter-factuals, imputation, and causal GPs. The course includes an individual final project, and co-authoring a project with the professor. These are the only two components of the grade, but regular progress is expected. Most instruction will be done in Python, but some Stan and \texttt{R} may be utilized. Previous programming experience is not assumed.
+
+\noindent Prerequisite: INTL 450 (or equivalent).
+
+\section*{Required Book}
+
+This class requires extensive reading to be adequately prepared for class. We will go over more recent advances, but the primary text is fundamental and freely available:\\\\
+
+\noindent Rasmussen, C.E. \& C.K.I. Williams. \emph{Gaussian Processes for Machine Learning}, the MIT Press, 2006,
+ISBN 026218253X. Massachusetts Institute of Technology. \href{www.GaussianProcess.org/gpml}{www.GaussianProcess.org/gpml}.\\
+
+\section*{Requirements and Grading}
+
+Grades will not be rounded, these represent strict cut-offs. In the rare event of, for example, exactly a 90, the higher grade will be assigned. Pluses and minuses will be applied at the instructor's discretion and will only be used if there are clear separations within a given grade. \textbf{Note that the Ko\c{c} suggested grades are not followed in this course.}
+
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+A&90--100\\
+B&80--90\\
+C&70--80\\
+D&60--70\\
+F&$<$60\\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{enumerate}[1)]
+
+
+\item \emph{Final Project: 50\%}
+
+A major component of the course is to develop methodological and presentation skills for the development of your research. Rather than work on unrelated research questions, the knowledge obtained in the course should be applied to your topic of interest. The methodological rigor and presentation style will be the key determinants of your grade for this section. In order to track your progress and keep you on-track, we will discuss your goals throughout the semester. If, at the end of the semester, you do not have a working thesis, you will be required to write a report detailing your progress and submit this for a final grade.
+
+\item \emph{Co-Authored Project: 50\%}
+
+The other component of the grade is to work with the professor on a project, with the final goal a publishable article. This may include conference or other presentations. Because this will be co-authored, extensive contribution is expected, and progress must be made throughout the semester.
+
+\end{enumerate}
+
+\section*{Course Schedule}
+
+\textbf{Please note this schedule is subject to change.}
+
+\subsection*{Week 1: Introduction to Background, GP Regression}
+
+\noindent{\textbf{Readings:} R\&W Introduction, Appendix A, Appendix B, Chapter 2
+
+\subsection*{Week 2: Classification}
+
+\noindent{\textbf{Readings:} R\&W Chapter 3
+
+\subsection*{Week 3: Covariance Functions, Model Selection and Adaptation of Hyperparameters}
+
+\noindent{\textbf{Readings:} R\&W Chapter 4 and 5
+
+\subsection*{Week 4: Relationships between GPs and Other Models, Theoretical Perspectives}
+
+\noindent{\textbf{Readings:} R\&W Chapter 6 and 7
+
+\subsection*{Week 5: Approximation Methods for Large Datasets}
+
+\noindent{\textbf{Readings:} R\&W Chapter 8 and 9
+
+\subsection*{Week 6: Flexibly Building a GP in Stan and Our Own Sampler}
+
+\noindent{\textbf{Readings:} Selected articles on Blackboard
+
+\subsection*{Week 7: Causal GPs, Other Extensions}
+
+\noindent{\textbf{Readings:} Selected articles on Blackboard
+
+\subsection*{Week 8: Touching Base on Projects and Review}
+
+\noindent{\textbf{Readings:} Selected articles on Blackboard
+
+
+\end{document}
